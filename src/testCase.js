@@ -17,7 +17,10 @@ class testCase {
 
 	// TODO but not like this : https://www.monkeyuser.com/2017/todo/
 	getExecutions(){
-		return null;
+		var obj = JSON.parse(this.json);
+		if (Array.isArray(obj.executions)) {
+			return true; 
+		} else {return false;}
 	}
 }
 
