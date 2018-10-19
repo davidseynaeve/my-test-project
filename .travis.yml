@@ -2,6 +2,5 @@ language: node_js
 node_js:
         - "node"
 script:
-	- echo "toto"
-	- npm update
-
+        - echo "toto"
+        - npm update
