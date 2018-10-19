@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+        - "node"
+script:
+        - echo "toto"
+        - npm update
+        - node_modules/.bin/jshint src
+        - node_modules/.bin/jsdoc src
+
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $token
+  keep-history: true
+  on:
+    branch: master
+
