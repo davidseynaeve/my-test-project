@@ -19,7 +19,7 @@ class testCase {
 	getExecutions(){
 		var obj = JSON.parse(this.json);
 		if (Array.isArray(obj.executions)) {
-			return true; 
+			return obj.executions; 
 		} else {return false;}
 	}
 }
